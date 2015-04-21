@@ -1,0 +1,41 @@
+<DOCTYPE! html>
+<html>
+	<head>
+	</head>
+
+	<body>
+		<div onclick="change()" id="cat">My Cat</div>
+<!--this html element goes with function change -->
+
+
+		<script>
+			function change(){
+				document.getElementById('cat').innerHTML = "My Cat Coolie!";
+			}
+			console.log("My Cat Coolie!");
+
+			function addNums(){
+				var x = 5;
+				var y = 6;
+				x + y;
+			}
+			console.log(5 + 6)
+
+			/*not sure why i put the function in the math shows in the console without it*/
+
+			var accessory = ["Boots and ", "Scarves and ", "Hats and "];
+			var more = ["pants.", "jackets.", "sun glasses."];
+			var all = [accessory, more];
+			console.log((all[0][0]) + (all[1][0]))
+			console.log((all[0][1]) + (all[1][2]))
+			alert((all[0][2]) + (all[1][1]))
+
+			alert("Here's My Homework");
+
+	
+
+			
+	
+		</script>
+	</body>
+</html>

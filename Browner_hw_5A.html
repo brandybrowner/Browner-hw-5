@@ -1,0 +1,33 @@
+<DOCTYPE! html>
+<html>
+	<head>
+	</head>
+
+	<body>
+		Number 1: <input type="text" id="num1">
+		Number 2: <input type="text" id="num2">
+		<button id="add" onclick="addNums()">Click to add</button>
+		<br>
+		<span id="result">Result Here</span>
+
+		<div id="el" onclick="change()">Some Text</div>
+		
+
+		<script>
+			function addNums(){
+				num1 = document.getElementById('num1').value;
+				num2 = document.getElementById('num2').value;
+				document.getElementById('result').innerHTML = (parseInt(num1) + parseInt(num2));
+				alert((parseInt(num1) + parseInt(num2)))
+			}
+
+			/*print to html*/
+			function change() {
+				document.getElementById("el").innerHTML = "CHANGED TEXT"
+			}
+
+			alert("Hello World!");
+	
+		</script>
+	</body>
+</html>
